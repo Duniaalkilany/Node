@@ -1,6 +1,16 @@
 # Node
 # Course content : 
 - development framework based on Google's V8 JS engine 
+- node.js is an open source , cross-platform(any platform 'mac,windows,linux') js runtime environment 
+- uses : backend services , real time applications (like chat), games (multiplayer game)
+-in terminal if you print node you will go to node shell or REPL 
+-REPL : Read Eval Print loop / Node Shell 
+-to know more about REPL print .help in node shell (REPL)
+-instead of write code in REPL , Node shell we will use text editor like vs code . 
+- does any thing write ,do by js can do by node.js ?
+no , not interact with DOM (Document Object Model) , document is not defined 
+-this is the global object in node , to know about what you can use in node in node docs choose globals 
+
 
 # node installation : 
 - node version : node -v 
@@ -11,12 +21,23 @@
 # what is different between node.js and browser : 
  Browser : 
 -interact with the DOM (document , window ) objects 
+**for exampl
 -does not interact with filesystem access functionality 
 -browser environment : where you do not get the luxury to choose what browser your visitors will use 
  Nosw.js-Server side :
  -does not interact with DOM (document object modeling)
  -interact with file system.
  -in node.js you control the environment (you know which version of node.js you will run)
+
+# what is modules in nodejs:
+- simple or complex functionality organized in single or multiple javascript files which can be reused in node application . 
+
+-node js contain modules this modules may be written in js or c++
+- type of modules : built-in (installed when you install node.js, no need to install it alone) , local/user-defined , npm modules (installed)
+- built in like os module / in node on github it will be found in lib folder 
+to check this built in module check node docs . 
+- 
+
 
  # starting Nodejs Project :
   - first create a directory for your new application and navigate into it :
