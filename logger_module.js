@@ -1,15 +1,23 @@
+import { Module } from "module"
+
+
+
 function log(message){
     console.log(`the message is${message} `)
 }
+
+
+
 //export the module to use it //export one module 
-module.exports = log
+// module.exports = log
 
 //export more than one function this mean that you will export object 
 
-let obj ={
-    name : "dunia",
-    age : log
-}
+// let obj ={
+//     name : "dunia",
+//     age : log
+// }
 
-console.log(obj.age('hiiiiiiiiiiiiiiiiii'))
+// console.log(obj.age('hiiiiiiiiiiiiiiiiii'))
 
+export default log 

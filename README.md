@@ -36,7 +36,8 @@ no , not interact with DOM (Document Object Model) , document is not defined
 - type of modules : built-in (installed when you install node.js, no need to install it alone) , local/user-defined , npm modules (installed)
 - built in like os module / in node on github it will be found in lib folder 
 to check this built in module check node docs . 
-- 
+- to use the modules we use require keyword 
+
 
 
  # starting Nodejs Project :
