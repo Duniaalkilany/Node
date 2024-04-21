@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="LLjqfELA9Rd6-7Lrv-Dh" name="Page-1">
+        <mxGraphModel dx="920" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="console.log(1)&lt;br&gt;&lt;br&gt;&lt;br&gt;//blocking code&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;console.log(3)" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="160" width="10" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Event Loop&lt;br&gt;&lt;br&gt;non blocking code until the main thread is done&amp;nbsp;&amp;nbsp;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="125" width="100" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="main thread&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="75" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="sync , blocking code&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="125" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="block the code from executing untill the blocking code done&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="210" width="340" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="console.log(1)&lt;br&gt;&lt;br&gt;console.log(2)&lt;br&gt;&lt;br&gt;&lt;br&gt;//non blocking code&amp;nbsp;&amp;nbsp;" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="160" width="10" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="console.log (1)&lt;br&gt;&lt;br&gt;non blocking code&amp;nbsp;&lt;br&gt;&lt;br&gt;console.log(2)" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="170" width="10" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="main thread&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="130" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="the non blocking (async) code (call back ) will moved to the event loop until it is done&amp;nbsp;&lt;br&gt;when the main thread is done they asked the event loop if there is any non blocking, call back ,promis , settimeout ...&lt;br&gt;&lt;br&gt;but this not block the code from executing so console.log(1) then console.log(2) then&amp;nbsp; the result of the blocking code&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="350" width="640" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

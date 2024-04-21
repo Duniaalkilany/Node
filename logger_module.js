@@ -19,5 +19,6 @@ function log(message){
 // }
 
 // console.log(obj.age('hiiiiiiiiiiiiiiiiii'))
-
+//to use ecmascript '';  'c 
 export default log 
+
